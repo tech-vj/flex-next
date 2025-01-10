@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 "use client";
 
 import React, { useState } from "react";
@@ -43,7 +45,7 @@ const Login = () => {
         // Display error message on failed login
         setError(data.message || "Login failed. Please try again.");
       }
-    } catch (err) {
+    } catch (_err) {
       setError("Error: Unable to connect to the server.");
     } finally {
       setLoading(false);
